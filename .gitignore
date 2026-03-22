@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+*.pt
+*.bin
+*.pkl
+
+# Model files ( lưu trên Drive)
+ai/models/*.pt
+ai/models/*.bin
+ai/data/
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Database
+*.sqlite
+*.db
