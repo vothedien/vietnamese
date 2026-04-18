@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  # Container cho Backend
+  backend:
+    build: ./backend
+    container_name: uth_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - ENV=development
+
+  # Container cho Frontend
+  frontend:
+    build: ./frontend
+    container_name: uth_frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
