@@ -34,4 +34,5 @@ logs/
 
 # Database
 *.sqlite
-*.db
+*.db 
+ai/models/best_phobert_multitask.pth
