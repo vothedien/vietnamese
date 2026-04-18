@@ -138,7 +138,7 @@ def get_classifier() -> ViTextClassifier:
         # 3. Đổi tên file mặc định cần tìm thành best_phobert_multitask.pth
         model_path = os.getenv(
             "MODEL_PATH",
-            "app/ai/models/best_phobert_multitask.pth" 
+            "../ai/models/best_phobert_multitask.pth" 
         )
         _classifier = ViTextClassifier(model_path)
     return _classifier

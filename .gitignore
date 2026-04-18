@@ -13,7 +13,6 @@ venv/
 ai/models/*.pt
 ai/models/*.bin
 ai/data/
-**/ai/models/*.pth
 
 # Node
 node_modules/
@@ -35,4 +34,5 @@ logs/
 
 # Database
 *.sqlite
-*.db
+*.db 
+ai/models/best_phobert_multitask.pth
